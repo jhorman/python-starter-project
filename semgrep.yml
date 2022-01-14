@@ -1,0 +1,13 @@
+rules:
+- id: no-exit
+  patterns:
+    - pattern: exit(...)
+  message: No exit
+  languages: [python]
+  severity: ERROR
+- id: no-breakpoint
+  patterns:
+    - pattern: breakpoint(...)
+  message: No breakpoint
+  languages: [python]
+  severity: ERROR

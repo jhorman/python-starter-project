@@ -1,0 +1,31 @@
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | files
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | tests/.*/snapshots
+)/
+'''
+
+[tool.mypy]
+python_version = "3.9"
+strict_optional = false
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unreachable = true
+
+plugins = ["strawberry.ext.mypy_plugin", "sqlalchemy.ext.mypy.plugin"]
