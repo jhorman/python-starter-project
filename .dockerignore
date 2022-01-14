@@ -1,9 +1,0 @@
-.env
-.env.local
-.git
-venv
-.venv
-*.pyc
-__pycache__
-.mypy_cache
-.python-version

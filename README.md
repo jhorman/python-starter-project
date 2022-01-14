@@ -5,7 +5,7 @@
 ```bash
 # https://github.com/pyenv/pyenv#installation
 # https://pipenv.readthedocs.io/en/latest/#install-pipenv-today
-brew install pyenv redis pipenv
+brew install pyenv pipenv
 pyenv install 3.9.6
 
 # from project dir
